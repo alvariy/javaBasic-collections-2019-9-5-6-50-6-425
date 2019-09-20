@@ -2,6 +2,8 @@ package com.cultivation.javaBasic.showYourIntelligence;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.sql.Array;
+
 @SuppressWarnings({"unused", "FieldCanBeLocal"})
 public class MyStack {
     private int[] storage;
@@ -23,10 +25,9 @@ public class MyStack {
         if (count == capacity) {
             ensureCapacity();
         }
-
         // TODO: Please push the value into the storage here.
         // <--start
-        throw new NotImplementedException();
+        storage[value] = value;
         // --end-->
     }
 
@@ -36,7 +37,7 @@ public class MyStack {
         // TODO: Please create a new array of size newCapacity. And update related fields
         // TODO: You SHOULD NOT USE COLLECTIONS OTHER THAN ARRAY.
         // <--start
-        throw new NotImplementedException();
+        storage = new int [newCapacity];
         // --end-->
     }
 

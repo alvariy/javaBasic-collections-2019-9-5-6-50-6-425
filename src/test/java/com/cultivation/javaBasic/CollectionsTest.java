@@ -28,6 +28,12 @@ class CollectionsTest {
         // TODO: you could ONLY use `Iterator.hasNext` and `Iterator.next` API to copy items to a `List`. No `for` is
         // allowed.
         // <--start
+        list.add(iterator.next());
+        iterator.hasNext();
+        list.add(iterator.next());
+        iterator.hasNext();
+        list.add(iterator.next());
+        iterator.hasNext();
 
         // --end-->
 
